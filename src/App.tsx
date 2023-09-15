@@ -23,7 +23,14 @@ function App() {
             <button><AiOutlineSearch /></button>
           </div>
         </header>
-        <img src={nucleoHomemDeFerro} alt="Núcleo do homem de ferro" />
+        <main>
+          <img src={nucleoHomemDeFerro} alt="Núcleo do homem de ferro" />
+          <div className="containerDescricaoMain">
+            <h1>Nome Personagem</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam voluptates dignissimos illum, reprehenderit ullam nesciunt in. Cumque accusantium, quam ullam nam dolores beatae debitis qui, eveniet iste impedit, eaque fugit atque corporis aliquam fuga explicabo exercitationem blanditiis? Dicta, incidunt quos sit modi aspernatur ab itaque tenetur dolorum, rerum ducimus porro!</p>
+            <a href="#">Mais Info</a>
+          </div>
+        </main>
       </BannerHome>
     </>
   )

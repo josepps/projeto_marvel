@@ -7,22 +7,8 @@ export const BannerHome = styled.section`
     position: relative;
 
     a {
+        color: #fff;
         text-decoration: none;
-    }
-
-    img {
-        width: 100%;
-        height: 95%;
-        object-fit: cover;
-    }
-
-    &:before {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to top, #050913 10%, rgba(5, 9, 19, 0.99) 5%, rgba(5, 9, 19, 0.8), rgba(5, 9, 19, 0.5), rgba(0, 0, 0, 0.0));
     }
 
     header {
@@ -34,6 +20,7 @@ export const BannerHome = styled.section`
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        z-index: 10;
 
         .logo {
             color: #fff;
@@ -61,7 +48,6 @@ export const BannerHome = styled.section`
             width: 100%;
 
                 a {
-                    color: #fff;
                     font-size: 0.8rem;
                     font-weight: 300;
                     transition: all 0.3s ease-in;
@@ -152,5 +138,152 @@ export const BannerHome = styled.section`
                 color: #ff0000;
             }
         }
+    }
+
+    main {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 95%;
+            object-fit: cover;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, #050913 10%, rgba(5, 9, 19, 0.99) 5%, rgba(5, 9, 19, 0.8), rgba(5, 9, 19, 0.5), rgba(0, 0, 0, 0.0));
+        }
+
+        .containerDescricaoMain {
+            position: absolute;
+            top: 35%;
+            left: 10%;
+            width: 30%;
+            height: 25%;
+
+            h1 {
+                color: #fff;
+                font-size: 2rem;
+            }
+
+            p {
+                color: rgba(255, 0, 0, 0.9);
+                padding: 1% 0 1% 5%;
+                max-width: 100%;
+                max-height: 65%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                margin: 3% 0 8% 0;
+            }
+
+            a {
+                margin: auto;
+                padding: 3% 20%;
+                border: 1.5px solid #fff;
+                transition: all 0.8s ease;
+                font-weight: 600;
+                position: relative;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: -1.5px;
+                    left: -1.5px;
+                    width: 5px;
+                    height: 1.5px;
+                    background: #ff0000;
+                    animation: efeito 5s ease-in-out infinite;
+                    visibility: hidden;
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: -1.5px;
+                    left: -1.5px;
+                    width: 5px;
+                    height: 1.5px;
+                    background: #ff0000;
+                    animation: efeito 5s ease-in-out 2.5s infinite;
+                    visibility: hidden;
+                }
+
+                @keyframes efeito {
+                    0% {
+                        top: -1.5px;
+                        left: -1.5px;
+                        width: 5px;
+                        height: 1.5px;
+                        visibility: visible;
+                    }
+                    35% {
+                        top: -1.5px;
+                        left: calc(100% - 3.5px);
+                        width: 5px;
+                        height: 1.5px;
+                    }
+                    36% {
+                        top: -1.5px;
+                        left: 100%;
+                        width: 1.5px;
+                        height: 5px;
+                    }
+                    50% {
+                        top: calc(100% - 3.5px);
+                        left: 100%;
+                        width: 1.5px;
+                        height: 5px;
+                    }
+                    51% {
+                        top: 100%;
+                        left: calc(100% - 3.5px);
+                        width: 5px;
+                        height: 1.5px;
+                    }
+                    86% {
+                        top: 100%;
+                        left: -1.5px;
+                        width: 5px;
+                        height: 1.5px;
+                    }
+                    87% {
+                        top: calc(100% - 3.5px);
+                        left: -1.5px;
+                        width: 1.5%;
+                        height: 5px;
+                    }
+                    99% {
+                        top: -1.5px;
+                        left: -1.5px;
+                        width: 1.5%;
+                        height: 5px;
+                    }
+                    100% {
+                        top: -1.5px;
+                        left: -1.5px;
+                        width: 5px;
+                        height: 1.5px;
+                    }
+                }
+
+                &:hover {
+                    border: 1.5px solid #ff0000;
+                    color: #ff0000;
+                    background: #ebe5e5;
+
+                    &:before,  &:after {
+                        background: #fff;
+                    }
+                }
+            }
+        }
+
     }
 `;

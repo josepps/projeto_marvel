@@ -144,12 +144,7 @@ export const BannerHome = styled.section`
         width: 100vw;
         height: 100vh;
         position: relative;
-
-        img {
-            width: 100%;
-            height: 95%;
-            object-fit: cover;
-        }
+        overflow: hidden;
 
         &:before {
             content: "";
@@ -285,5 +280,114 @@ export const BannerHome = styled.section`
             }
         }
 
+        .slides {
+            display: flex;
+            width: 500%;
+            height: 100%;
+
+            input {
+                display: none;
+            }
+
+            .slide {
+                width: 20%;
+                transition: .6s;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            #slide1:checked ~ .s1 {
+                margin-left: 0;
+            }
+
+            #slide2:checked ~ .s1 {
+                margin-left: -20%;
+            }
+
+            #slide3:checked ~ .s1 {
+                margin-left: -40%;
+            }
+
+            #slide4:checked ~ .s1 {
+                margin-left: -60%;
+            }
+
+            #slide5:checked ~ .s1 {
+                margin-left: -80%;
+            }
+
+            .containerMarcadoresNavigation {
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translate(-50%);
+                display: flex;
+
+                div {
+                    width: 240px;
+                    height: 150px;
+                    border: 1px solid #050913;
+                    margin: 6px;
+                    border-radius: 5px;
+                    transition: .4s;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0.2;
+                    }
+                }
+            }
+
+            #slide1:checked ~ .containerMarcadoresNavigation .marcadorNavigation1 {
+                img {
+                        opacity: 1;
+                }
+            }
+            #slide2:checked ~ .containerMarcadoresNavigation .marcadorNavigation2 {
+                img {
+                        opacity: 1;
+                }
+            }
+            #slide3:checked ~ .containerMarcadoresNavigation .marcadorNavigation3 {
+                img {
+                        opacity: 1;
+                }
+            }
+            #slide4:checked ~ .containerMarcadoresNavigation .marcadorNavigation4 {
+                img {
+                        opacity: 1;
+                }
+            }
+            #slide5:checked ~ .containerMarcadoresNavigation .marcadorNavigation5 {
+                img {
+                        opacity: 1;
+                }
+            }
+        }
+    
+        .navigation {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translate(-50%);
+            display: flex;
+
+            .bar {
+                width: 240px;
+                height: 150px;
+                margin: 6px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: .4s;
+
+                &:hover {
+                    border: 1px solid #ff0000;
+                }
+            }
+        }
     }
 `;

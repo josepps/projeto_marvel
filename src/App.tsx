@@ -5,7 +5,7 @@ import image4 from "../public/Img/img4.jpg"
 import image5 from "../public/Img/img5.jpg"
 import { AiOutlineSearch } from 'react-icons/ai';
 
-import { BannerHome } from "./App.Style";
+import { BannerHome, SectionPersonagensPorQuadrinhos } from "./App.Style";
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -149,6 +149,84 @@ const handleSlideChange = (event: { target: { id: React.SetStateAction<string>; 
 
         </main>
       </BannerHome>
+      <SectionPersonagensPorQuadrinhos>
+        <h2>Personagens por Quadrinhos</h2>
+        <div className="containerImagensQuadrinho">
+          <div className="imagemQuadrinho">
+            <img src={image1} alt="image1" />
+            <h3>Nome Quadinhro</h3>
+            <h3>Nome Quadinhro</h3>
+          </div>
+          <div className="imagemQuadrinho">
+            <img src={image2} alt="image1" />
+            <h3>Nome Quadinhro</h3>
+          </div>
+          <div className="imagemQuadrinho">
+            <img src={image3} alt="image1" />
+            <h3>Nome Quadinhro</h3>
+          </div>
+          <div className="imagemQuadrinho">
+            <img src={image4} alt="image1" />
+            <h3>Nome Quadinhro</h3>
+          </div>
+          <div className="imagemQuadrinho">
+            <img src={image5} alt="image1" />
+            <h3>Nome Quadinhro</h3>
+          </div>
+          <div className="imagemQuadrinho">
+            <img src={image1} alt="image1" />
+            <h3>Nome Quadinhro</h3>
+          </div>
+          <div className="imagemQuadrinho">
+            <img src={image2} alt="image1" />
+            <h3>Nome Quadinhro</h3>
+          </div>
+          <div className="imagemQuadrinho">
+            <img src={image3} alt="image1" />
+            <h3>Nome Quadinhro</h3>
+          </div>
+          <div className="imagemQuadrinho">
+            <img src={image4} alt="image1" />
+            <h3>Nome Quadinhro</h3>
+          </div>
+          <div className="imagemQuadrinho">
+            <img src={image5} alt="image1" />
+            <h3>Nome Quadinhro</h3>
+          </div>
+          <div className="imagemQuadrinho">
+            <img src={image1} alt="image1" />
+            <h3>Nome Quadinhro</h3>
+          </div>
+          <div className="imagemQuadrinho">
+            <img src={image2} alt="image1" />
+            <h3>Nome Quadinhro</h3>
+          </div>
+          <div className="imagemQuadrinho">
+            <img src={image3} alt="image1" />
+            <h3>Nome Quadinhro</h3>
+          </div>
+          <div className="imagemQuadrinho">
+            <img src={image4} alt="image1" />
+            <h3>Nome Quadinhro</h3>
+          </div>
+          <div className="imagemQuadrinho">
+            <img src={image5} alt="image1" />
+            <h3>Nome Quadinhro</h3>
+          </div>
+          <div className="imagemQuadrinho">
+            <img src={image1} alt="image1" />
+            <h3>Nome Quadinhro</h3>
+          </div>
+          <div className="imagemQuadrinho">
+            <img src={image2} alt="image1" />
+            <h3>Nome Quadinhro</h3>
+          </div>
+          <div className="imagemQuadrinho">
+            <img src={image3} alt="image1" />
+            <h3>Nome Quadinhro</h3>
+          </div>
+        </div>
+      </SectionPersonagensPorQuadrinhos>
     </>
   )
 }

@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const BannerHome = styled.section`
     width: 100vw;
     height: 100vh;
-    background: #050913;
     position: relative;
 
     a {
@@ -387,6 +386,48 @@ export const BannerHome = styled.section`
                 &:hover {
                     border: 1px solid #ff0000;
                 }
+            }
+        }
+    }
+`;
+
+export const SectionPersonagensPorQuadrinhos = styled.section`
+    width: 100vw;
+    height: auto;
+    margin-bottom: 5%;
+
+    h2 {
+        margin: 5%;
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    .containerImagensQuadrinho {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+
+        .imagemQuadrinho {
+            width: 15%;
+            margin: 5px 10px;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            h3 {
+                position: absolute;
+                bottom: 5%;
+                left: 5%;
+                color: #fff;
+                font-weight: 300;
+                background: rgba(0, 0, 0, 0.6);
+                padding: 1% 4%;
+                box-shadow: 0px 0px 3px 5px rgba(0, 0, 0, 0.5);
             }
         }
     }

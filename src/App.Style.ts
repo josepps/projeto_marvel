@@ -432,3 +432,78 @@ export const SectionPersonagensPorQuadrinhos = styled.section`
         }
     }
 `;
+
+export const SectionCriadoresQuadrinhos = styled.section`
+    width: 100vw;
+    height: auto;
+    margin-bottom: 5%;
+
+    h2 {
+        width: 90%;
+        height: 10%;
+        margin: 2% auto;
+        display: flex;
+        align-items: center;
+        padding-left: 3%;
+        color: #fff;
+        font-size: 2rem;
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    .containeterContainerEscritores {
+        width: 90%;
+        height: auto;
+        margin: 1% auto;
+
+        .containerEscritores {
+            width: 100%;
+            height: 20vh;
+            display: flex;
+
+            .imgEscritores {
+                width: 20%;
+                height: 100%;
+                border-radius: 5px;
+            }
+
+            .containerInfoEscritores {
+                width: 80%;
+                height: 100%;
+                border: 1.5px solid #2A475E;
+                margin-left: 10px;
+                display: flex;
+                border-radius: 5px;
+
+                .infoescritores {
+                    width: 25%;
+                    height: 100%;
+                    color: #fff;
+
+                    h3 {
+                        padding: 4% 0% 5% 8%;
+                    }
+
+                    p {
+                        padding: 2% 0% 2% 10%;
+                    }
+                }
+
+                .imgsObrasEscritores {
+                    width: 75%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+
+                    img {
+                        width: 30%;
+                        height: 80%;
+                        background: red;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+`;

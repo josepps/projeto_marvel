@@ -5,7 +5,7 @@ import image4 from "../public/Img/img4.jpg"
 import image5 from "../public/Img/img5.jpg"
 import { AiOutlineSearch } from 'react-icons/ai';
 
-import { BannerHome, SectionPersonagensPorQuadrinhos } from "./App.Style";
+import { BannerHome, SectionCriadoresQuadrinhos, SectionPersonagensPorQuadrinhos } from "./App.Style";
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -227,6 +227,63 @@ const handleSlideChange = (event: { target: { id: React.SetStateAction<string>; 
           </div>
         </div>
       </SectionPersonagensPorQuadrinhos>
+      <SectionCriadoresQuadrinhos>
+        <h2>Escritores</h2>
+        <div className="containeterContainerEscritores">
+          <div className="containerEscritores">
+            <img className="imgEscritores" src={image1} alt="" />
+            <div className="containerInfoEscritores">
+              <div className="infoescritores">
+                <h3>Nome</h3>
+                <p>Número de Quadrinhos: <span>00</span></p>
+                <p>Número de Séries: <span>00</span></p>
+                <p>Número de histórias: <span>00</span></p>
+              </div>
+              <div className="imgsObrasEscritores">
+                <img src={image2} alt="" />
+                <img src={image3} alt="" />
+                <img src={image4} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="containeterContainerEscritores">
+          <div className="containerEscritores">
+            <img className="imgEscritores" src={image1} alt="" />
+            <div className="containerInfoEscritores">
+              <div className="infoescritores">
+                <h3>Nome</h3>
+                <p>Número de Quadrinhos: <span>00</span></p>
+                <p>Número de Séries: <span>00</span></p>
+                <p>Número de histórias: <span>00</span></p>
+              </div>
+              <div className="imgsObrasEscritores">
+                <img src={image2} alt="" />
+                <img src={image3} alt="" />
+                <img src={image4} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="containeterContainerEscritores">
+          <div className="containerEscritores">
+            <img className="imgEscritores" src={image1} alt="" />
+            <div className="containerInfoEscritores">
+              <div className="infoescritores">
+                <h3>Nome</h3>
+                <p>Número de Quadrinhos: <span>00</span></p>
+                <p>Número de Séries: <span>00</span></p>
+                <p>Número de histórias: <span>00</span></p>
+              </div>
+              <div className="imgsObrasEscritores">
+                <img src={image2} alt="" />
+                <img src={image3} alt="" />
+                <img src={image4} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </SectionCriadoresQuadrinhos>
     </>
   )
 }

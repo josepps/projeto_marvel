@@ -7,8 +7,21 @@ import { AiOutlineSearch } from 'react-icons/ai';
 
 import { BannerHome, SectionCriadoresQuadrinhos, SectionPersonagensPorQuadrinhos } from "./App.Style";
 import { useEffect, useState } from 'react';
+import axios from "axios"
 
 function App() {
+
+  const timesTemp = "1698453974";
+  const apiKey = "a04ae697977c3cac56a7a7f2eeb5dc24";
+  const hash = "6a34c9b548190dc83ca4c74e45699dde"
+
+
+  useEffect(() => {
+    axios.get(`http://gateway.marvel.com/v1/public/characters?ts=${timesTemp}&apikey=${apiKey}&hash=${hash}`)
+    .then(response => console.log(response.data.data))
+    .catch(err => console.log(err))    
+    }, [])
+
 const [selectedSlide, setSelectedSlide] = useState("slide1");
 
 
